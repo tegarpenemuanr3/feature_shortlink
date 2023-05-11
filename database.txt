@@ -1,0 +1,13 @@
+sudo -u postgres psql
+
+CREATE DATABASE shortlinks;
+
+\c shortlinks
+
+CREATE TABLE shortlinks (
+  id TEXT PRIMARY KEY,
+  origin_path TEXT NOT NULL
+);
+
+SELECT * FROM shortlinks;
+-------------------------------------------
